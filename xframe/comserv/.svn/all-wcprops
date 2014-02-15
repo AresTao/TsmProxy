@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv
+END
+udpsocket.C
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/107/trunk/xframe/comserv/udpsocket.C
+END
+threadmutexRW.C
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/threadmutexRW.C
+END
+tinyxml.C
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv/tinyxml.C
+END
+fifoabstract.C
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/fifoabstract.C
+END
+dataconvert.C
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/7/trunk/xframe/comserv/dataconvert.C
+END
+des.C
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/rtc/!svn/ver/7/trunk/xframe/comserv/des.C
+END
+dbmysql.C
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rtc/!svn/ver/118/trunk/xframe/comserv/dbmysql.C
+END
+tinystr.C
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/tinystr.C
+END
+threadcondition.C
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/threadcondition.C
+END
+tinyxmlerror.C
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/tinyxmlerror.C
+END
+threadlock.C
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/threadlock.C
+END
+tinyxmlparser.C
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv/tinyxmlparser.C
+END
+comtypedef_vchar.C
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv/comtypedef_vchar.C
+END
+threadmutexRecursive.C
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/threadmutexRecursive.C
+END
+base64.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/7/trunk/xframe/comserv/base64.C
+END
+db.C
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/rtc/!svn/ver/118/trunk/xframe/comserv/db.C
+END
+threadif.C
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rtc/!svn/ver/19/trunk/xframe/comserv/threadif.C
+END
+socket.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/7/trunk/xframe/comserv/socket.C
+END
+env.C
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/rtc/!svn/ver/125/trunk/xframe/comserv/env.C
+END
+cmd5.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/118/trunk/xframe/comserv/cmd5.C
+END
+threadmutex.C
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/5/trunk/xframe/comserv/threadmutex.C
+END
+info.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv/info.C
+END
+hashtable.C
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/120/trunk/xframe/comserv/hashtable.C
+END
+func.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/131/trunk/xframe/comserv/func.C
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/rtc/!svn/ver/173/trunk/xframe/test/kernal
+END
+testselftask.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/154/trunk/xframe/test/kernal/testselftask.h
+END
+testsendtask.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/135/trunk/xframe/test/kernal/testsendtask.h
+END
+testrecvtask.C
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/154/trunk/xframe/test/kernal/testrecvtask.C
+END
+main.C
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rtc/!svn/ver/173/trunk/xframe/test/kernal/main.C
+END
+testrecvtask.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/135/trunk/xframe/test/kernal/testrecvtask.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/154/trunk/xframe/test/kernal/makefile
+END
+testselftask.C
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/173/trunk/xframe/test/kernal/testselftask.C
+END
+testsendtask.C
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/154/trunk/xframe/test/kernal/testsendtask.C
+END

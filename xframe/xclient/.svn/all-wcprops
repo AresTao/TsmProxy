@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/rtc/!svn/ver/152/trunk/xframe/xclient
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rtc/!svn/ver/152/trunk/xframe/xclient/config.xml
+END
+main.C
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rtc/!svn/ver/152/trunk/xframe/xclient/main.C
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/rtc/!svn/ver/152/trunk/xframe/xclient/makefile
+END

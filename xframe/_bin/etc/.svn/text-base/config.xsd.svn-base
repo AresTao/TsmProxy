@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 (http://www.altova.com) by TeaM DJiNN (TeaM DJiNN) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="xframe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="common">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="log">
+								<xs:complexType>
+									<xs:attribute name="logType" use="required">
+										<xs:annotation>
+											<xs:documentation>输出日志类型，Cout、File、Both</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Cout"/>
+												<xs:enumeration value="File"/>
+												<xs:enumeration value="Both"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="logLevel" use="required">
+										<xs:annotation>
+											<xs:documentation>输出日志等级，Debug、Info、Error</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Debug"/>
+												<xs:enumeration value="Info"/>
+												<xs:enumeration value="Error"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dblist">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="db" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="dbID" type="xs:integer" use="required">
+													<xs:annotation>
+														<xs:documentation>必须是大于1的取值</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="dbType" use="required">
+													<xs:annotation>
+														<xs:documentation>0=mysql
+1=oracle
+2=sqlite</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:integer">
+															<xs:enumeration value="0"/>
+															<xs:enumeration value="1"/>
+															<xs:enumeration value="2"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="dbUser" type="xs:string" use="required">
+													<xs:annotation>
+														<xs:documentation>database user name in MySQL
+database schema name in Oracle</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="dbPass" type="xs:string" use="required"/>
+												<xs:attribute name="dbName" type="xs:string" use="required">
+													<xs:annotation>
+														<xs:documentation>dbname in mysql
+sid in oracle</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="dbHost" type="xs:string" use="required"/>
+												<xs:attribute name="dbPort" type="xs:integer" use="required"/>
+												<xs:attribute name="desc"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="kernal">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="log" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>可以不设置，默认使用common的配置</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="logType" use="required">
+										<xs:annotation>
+											<xs:documentation>输出日志类型，Cout、File、Both</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Cout"/>
+												<xs:enumeration value="File"/>
+												<xs:enumeration value="Both"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="logLevel" use="required">
+										<xs:annotation>
+											<xs:documentation>输出日志等级，Debug、Info、Error</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Debug"/>
+												<xs:enumeration value="Info"/>
+												<xs:enumeration value="Error"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="timerrsc">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="timer" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="id" use="required">
+													<xs:annotation>
+														<xs:documentation>从1开始，最大不能超过30</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:integer"/>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="name" use="required">
+													<xs:annotation>
+														<xs:documentation>定时器名称</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:maxLength value="49"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="delay" type="xs:integer" use="required">
+													<xs:annotation>
+														<xs:documentation>延迟时间，以秒为单位</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="resendnum" type="xs:integer" use="required">
+													<xs:annotation>
+														<xs:documentation>重发次数，默认0，不重发</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="desc" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="sc">
+								<xs:complexType>
+									<xs:attribute name="scIP" use="required"/>
+									<xs:attribute name="scPort" use="required"/>
+									<xs:attribute name="hbInterval" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="process">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="task" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="taskID" use="required"/>
+												<xs:attribute name="threadNum" use="required">
+													<xs:annotation>
+														<xs:documentation>缺省启动的实例数量</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:integer">
+															<xs:minInclusive value="0" fixed="true"/>
+															<xs:maxInclusive value="10" fixed="true"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="appName">
+							<xs:annotation>
+								<xs:documentation>appName是系统的名字，可以不设置，在系统启动的时候动态输入到系统中</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="appID" type="xs:integer">
+							<xs:annotation>
+								<xs:documentation>appID=hostID是系统的编号，可以不设置，在系统启动的时候动态输入到系统中</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="hostIP" use="required">
+							<xs:annotation>
+								<xs:documentation>单机的情况下可以不设置IP</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tasklist">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="task" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="timerrsc">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="timer" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="id" use="required">
+																<xs:annotation>
+																	<xs:documentation>从1开始，最大不能超过30</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:integer"/>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="name" use="required">
+																<xs:annotation>
+																	<xs:documentation>定时器名称</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:maxLength value="49"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="delay" type="xs:integer" use="required">
+																<xs:annotation>
+																	<xs:documentation>延迟时间，以秒为单位</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="resendnum" type="xs:integer" use="required">
+																<xs:annotation>
+																	<xs:documentation>重发次数，默认0，不重发</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="desc" type="xs:string"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="log" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>可以不设置，默认使用common的设置</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:attribute name="logType" use="required">
+													<xs:annotation>
+														<xs:documentation>输出日志类型，Cout、File、Both</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="Cout"/>
+															<xs:enumeration value="File"/>
+															<xs:enumeration value="Both"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="logLevel" use="required">
+													<xs:annotation>
+														<xs:documentation>输出日志等级，Debug、Info、Error</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="Debug"/>
+															<xs:enumeration value="Info"/>
+															<xs:enumeration value="Error"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="dbrsc">
+											<xs:annotation>
+												<xs:documentation>数据库资源。每个应用可以配置多个数据库资源，以建立不同的数据库连接。</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="db" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="index" use="required">
+																<xs:annotation>
+																	<xs:documentation>数据库资源索引，取值为1~4</xs:documentation>
+																</xs:annotation>
+																<xs:simpleType>
+																	<xs:restriction base="xs:integer">
+																		<xs:minInclusive value="0"/>
+																		<xs:maxInclusive value="4"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="dbID" type="xs:integer" use="required">
+																<xs:annotation>
+																	<xs:documentation>数据库配置ID，指向dblist节点下的数据库配置</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="dbID">
+													<xs:annotation>
+														<xs:documentation>默认的DBID。在不配置db的时候，可设置该dbID为默认的dbid。</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="extend">
+											<xs:complexType>
+												<xs:choice>
+													<xs:element name="psa">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="binds">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="bind" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:attribute name="bindID" use="required">
+																						<xs:annotation>
+																							<xs:documentation>绑定关系索引</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																					<xs:attribute name="localIP" use="required">
+																						<xs:annotation>
+																							<xs:documentation>绑定的IP地址</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																					<xs:attribute name="localPort" type="xs:integer" use="required">
+																						<xs:annotation>
+																							<xs:documentation>绑定的端口</xs:documentation>
+																						</xs:annotation>
+																					</xs:attribute>
+																					<xs:attribute name="transportType" use="required">
+																						<xs:annotation>
+																							<xs:documentation>承载类型（UDP、TCP、TLS、WS）</xs:documentation>
+																						</xs:annotation>
+																						<xs:simpleType>
+																							<xs:restriction base="xs:string">
+																								<xs:enumeration value="UDP"/>
+																								<xs:enumeration value="TCP"/>
+																								<xs:enumeration value="TLS"/>
+																								<xs:enumeration value="WS"/>
+																							</xs:restriction>
+																						</xs:simpleType>
+																					</xs:attribute>
+																					<xs:attribute name="networkType" use="required">
+																						<xs:annotation>
+																							<xs:documentation>网络类型，IPv4、IPv6</xs:documentation>
+																						</xs:annotation>
+																						<xs:simpleType>
+																							<xs:restriction base="xs:string">
+																								<xs:enumeration value="IPv4"/>
+																								<xs:enumeration value="IPv6"/>
+																							</xs:restriction>
+																						</xs:simpleType>
+																					</xs:attribute>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="target">
+																	<xs:complexType>
+																		<xs:attribute name="regTask" use="required">
+																			<xs:annotation>
+																				<xs:documentation>注册任务的TaskID</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																		<xs:attribute name="procTask" use="required">
+																			<xs:annotation>
+																				<xs:documentation>处理任务的TaskID</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="sip">
+																	<xs:annotation>
+																		<xs:documentation>SIP协议栈使用sip节点做配置</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:attribute name="regRefreshInterval" type="xs:integer" default="600">
+																			<xs:annotation>
+																				<xs:documentation>用户注册心跳刷新时间</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																		<xs:attribute name="callRefreshInterval" type="xs:integer" default="60">
+																			<xs:annotation>
+																				<xs:documentation>用户呼叫心跳刷新时间</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="task">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="target">
+																	<xs:complexType>
+																		<xs:attribute name="psaTask" use="required">
+																			<xs:annotation>
+																				<xs:documentation>协议栈的TaskID</xs:documentation>
+																			</xs:annotation>
+																		</xs:attribute>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:choice>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="taskID" use="required">
+										<xs:annotation>
+											<xs:documentation>任务模块ID</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:integer">
+												<xs:minInclusive value="1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="taskType" use="required">
+										<xs:annotation>
+											<xs:documentation>任务模块类型，psa或task</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="psa"/>
+												<xs:enumeration value="task"/>
+												<xs:enumeration value="extend"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="taskName" type="xs:string" use="required">
+										<xs:annotation>
+											<xs:documentation>任务模块名字</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="taskDll">
+										<xs:annotation>
+											<xs:documentation>任务模块需要加载的动态库文件名</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

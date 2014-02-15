@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/rtc/!svn/ver/7/trunk/xframe/include/_compat
+END
+gfsm.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/7/trunk/xframe/include/_compat/gfsm.h
+END
+comtypedef_uninet.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rtc/!svn/ver/7/trunk/xframe/include/_compat/comtypedef_uninet.h
+END
+msgdef_uninet.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rtc/!svn/ver/7/trunk/xframe/include/_compat/msgdef_uninet.h
+END

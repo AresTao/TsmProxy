@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/rtc/!svn/ver/147/trunk/xframe/include/task
+END
+taskthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/147/trunk/xframe/include/task/taskthread.h
+END
+abstracttask.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtc/!svn/ver/101/trunk/xframe/include/task/abstracttask.h
+END

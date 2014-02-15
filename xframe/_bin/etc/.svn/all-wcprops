@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/rtc/!svn/ver/103/trunk/xframe/_bin/etc
+END
+sample.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rtc/!svn/ver/25/trunk/xframe/_bin/etc/sample.xml
+END
+config.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/103/trunk/xframe/_bin/etc/config.xsd
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/rtc/!svn/ver/20/trunk/xframe/_bin/etc/config.xml
+END

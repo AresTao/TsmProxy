@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/171/trunk/xframe/_lib/openssl1.0.0-x32
+END
+libcrypto.so
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rtc/!svn/ver/171/trunk/xframe/_lib/openssl1.0.0-x32/libcrypto.so
+END
+libssl.so
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rtc/!svn/ver/171/trunk/xframe/_lib/openssl1.0.0-x32/libssl.so
+END

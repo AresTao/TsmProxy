@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/rtc/!svn/ver/148/trunk/xframe/include/msg
+END
+xmlmsgconvertor.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtc/!svn/ver/7/trunk/xframe/include/msg/xmlmsgconvertor.h
+END
+msgdatadef.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtc/!svn/ver/19/trunk/xframe/include/msg/msgdatadef.h
+END
+msgutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/19/trunk/xframe/include/msg/msgutil.h
+END
+msgdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/148/trunk/xframe/include/msg/msgdef.h
+END
+msg.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/rtc/!svn/ver/148/trunk/xframe/include/msg/msg.h
+END
+msgnamedef.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rtc/!svn/ver/8/trunk/xframe/include/msg/msgnamedef.h
+END

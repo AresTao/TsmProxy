@@ -1,0 +1,17 @@
+if [ $# -eq 0 ]; 
+then
+   SOFILES=$UNIDIR/app/*.so;
+else
+   SOFILES=$1/*.so;
+fi
+for i in $SOFILES; 
+do
+   echo check $i ...
+   g++ $i -L$UNIDIR/lib -luniframe
+   if [ $? -ne 0 ]
+   then
+      rm -f a.out;
+      exit 1;
+   fi
+   rm -f a.out;
+done

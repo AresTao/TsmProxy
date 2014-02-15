@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rtc/!svn/ver/131/trunk/xframe/include/comserv
+END
+cexpirebuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/cexpirebuffer.h
+END
+func.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rtc/!svn/ver/131/trunk/xframe/include/comserv/func.h
+END
+fifotimelimit.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/fifotimelimit.h
+END
+udpsocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/udpsocket.h
+END
+threadmutexRW.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadmutexRW.h
+END
+fifosorted.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/fifosorted.h
+END
+tinyxml.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/131/trunk/xframe/include/comserv/tinyxml.h
+END
+fdset.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/fdset.h
+END
+cvector.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/cvector.h
+END
+unihashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rtc/!svn/ver/120/trunk/xframe/include/comserv/unihashtable.h
+END
+dataconvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/dataconvert.h
+END
+dbmysql.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/118/trunk/xframe/include/comserv/dbmysql.h
+END
+clist.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/clist.h
+END
+threadmutexRecursive.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadmutexRecursive.h
+END
+db.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/120/trunk/xframe/include/comserv/db.h
+END
+threadif.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/19/trunk/xframe/include/comserv/threadif.h
+END
+cmd5.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rtc/!svn/ver/118/trunk/xframe/include/comserv/cmd5.h
+END
+env.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/125/trunk/xframe/include/comserv/env.h
+END
+threadmutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadmutex.h
+END
+info.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rtc/!svn/ver/34/trunk/xframe/include/comserv/info.h
+END
+comtypedef.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rtc/!svn/ver/13/trunk/xframe/include/comserv/comtypedef.h
+END
+comtypedef_compat.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/comtypedef_compat.h
+END
+comtypedef_fchar.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/comtypedef_fchar.h
+END
+threadlockable.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadlockable.h
+END
+fifoabstract.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/fifoabstract.h
+END
+des.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/des.h
+END
+tinystr.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/tinystr.h
+END
+threadcondition.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadcondition.h
+END
+threadlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/threadlock.h
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/defs.h
+END
+fifofinite.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/fifofinite.h
+END
+comtypedef_vchar.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rtc/!svn/ver/131/trunk/xframe/include/comserv/comtypedef_vchar.h
+END
+fifo.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/fifo.h
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/base64.h
+END
+comconst.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/comconst.h
+END
+unibuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rtc/!svn/ver/5/trunk/xframe/include/comserv/unibuffer.h
+END
+socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rtc/!svn/ver/7/trunk/xframe/include/comserv/socket.h
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rtc/!svn/ver/120/trunk/xframe/_lib/openssl1.0.0-x32/include/openssl
+END
+opensslconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/rtc/!svn/ver/120/trunk/xframe/_lib/openssl1.0.0-x32/include/openssl/opensslconf.h
+END
+opensslconf-i386.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/rtc/!svn/ver/120/trunk/xframe/_lib/openssl1.0.0-x32/include/openssl/opensslconf-i386.h
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/rtc/!svn/ver/120/trunk/xframe/_lib/openssl1.0.0-x32/include/openssl/md5.h
+END
+e_os2.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/rtc/!svn/ver/120/trunk/xframe/_lib/openssl1.0.0-x32/include/openssl/e_os2.h
+END
