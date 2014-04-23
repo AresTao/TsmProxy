@@ -43,14 +43,14 @@ const int maxLen = 10000;
 #pragma pack (1)
 struct Command
 {
-    int type;  //0 present for reload,1 present for status
-    int taskId;
-    int instId;
-    char cmd[100];
-    Command():taskId(-1), instId(-1)
-    {
-        cmd[0] = 0;
-    }
+	int type;  //0 present for reload,1 present for status
+	int taskId;
+	int instId;
+	char cmd[100];
+	Command():taskId(-1), instId(-1)
+	{
+		cmd[0] = 0;
+	}
 };
 /********************************************/
 
@@ -66,55 +66,55 @@ struct TTask
 //singleton形式的Xframemanager
 class TFRAMEManager
 {
-    //外部调用接口
-public:
-	TFRAMEManager();
-	virtual ~TFRAMEManager();
-	static TFRAMEManager * instance();
+	//外部调用接口
+	public:
+		TFRAMEManager();
+		virtual ~TFRAMEManager();
+		static TFRAMEManager * instance();
 
-	//启动之前根据配置文件初始化
-	void Init(UINT appID, char* appName);
-	//在系统启动之前把应用的任务注册到manager中
-	void registerTask(UINT taskID, TAbstractTask* task);
-	//系统启动
-	void Run();
+		//启动之前根据配置文件初始化
+		void Init(UINT appID, char* appName);
+		//在系统启动之前把应用的任务注册到manager中
+		void registerTask(UINT taskID, TAbstractTask* task);
+		//系统启动
+		void Run();
 
-private:
-    //socket for external watch tool
-    CUDPSocket socket;
+	private:
+		//socket for external watch tool
+		CUDPSocket socket;
 
-    TFRAMEControl *     framectrl;
-    TKernalThread * kernalThread;
+		TFRAMEControl *     framectrl;
+		TKernalThread * kernalThread;
 
-	UINT mMaxInst;
+		UINT mMaxInst;
 
 
-	int mLogType;
-	int mLogLevel;
+		int mLogType;
+		int mLogLevel;
 
-	CStr mSCIP;
-	UINT	 mSCPort;
-	UINT	 mSCHB;
+		CStr mSCIP;
+		UINT	 mSCPort;
+		UINT	 mSCHB;
 
-	UINT mAppID;
-	CStr mAppName;
-	CStr mHostIP;
+		UINT mAppID;
+		CStr mAppName;
+		CStr mHostIP;
 
-	CList<TProcRsc>						mProcList;		//配置文件中设置的系统启动列表
-	CHashTable<UINT, TAbstractTask *>	mTaskObj;		//应用注册的对象实例列表<UINT taskID, TAbstractTask* task>
+		CList<TProcRsc>						mProcList;		//配置文件中设置的系统启动列表
+		CHashTable<UINT, TAbstractTask *>	mTaskObj;		//应用注册的对象实例列表<UINT taskID, TAbstractTask* task>
 
-    CList<TTask*> 						mInstList;		//按照Inst 管理的实例列表，用于系统启动时按顺序加载和初始化
-    CHashTable<UINT, CList<TTask*>*>	mTaskList;		//按照Task 管理的实例列表，可用于系统管理和控制
+		CList<TTask*> 						mInstList;		//按照Inst 管理的实例列表，用于系统启动时按顺序加载和初始化
+		CHashTable<UINT, CList<TTask*>*>	mTaskList;		//按照Task 管理的实例列表，可用于系统管理和控制
 
-    Fifo<TMsg> * mFifo; 	//接受应用返回消息的队列
+		Fifo<TMsg> * mFifo; 	//接受应用返回消息的队列
 
-    static TFRAMEManager * _instance;
-	UINT	mTransID;
+		static TFRAMEManager * _instance;
+		UINT	mTransID;
 
-	TaskTimerQueue* mTTQ;			//内部定时器对象
- 	TTimerRsc 		mTME;		//每个任务默认配置不超过30个定时器
+		TaskTimerQueue* mTTQ;			//内部定时器对象
+		TTimerRsc 		mTME;		//每个任务默认配置不超过30个定时器
 
-	BOOL   shutdown;
+		BOOL   shutdown;
 
 };
 
