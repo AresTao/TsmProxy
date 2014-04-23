@@ -1,0 +1,11 @@
+#ifndef  __HTTPMSGCONSTDEF_SIP_H
+#define  __HTTPMSGCONSTDEF_SIP_H
+
+enum HTTPMETHODTYPE
+{
+   HTTP_UNKNOWN=0, 
+}; 
+
+
+#endif
+

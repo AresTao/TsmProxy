@@ -1,0 +1,28 @@
+#ifndef  __MSGCONSTDEF_SIP_H
+#define  __MSGCONSTDEF_SIP_H
+
+enum SIPMETHODTYPE
+{
+   SIP_UNKNOWN=0, 
+   SIP_ACK, 
+   SIP_BYE, 
+   SIP_CANCEL, 
+   SIP_INVITE, 
+   SIP_NOTIFY, 
+   SIP_OPTIONS, 
+   SIP_REFER, 
+   SIP_REGISTER, 
+   SIP_SUBSCRIBE, 
+   SIP_RESPONSE, 
+   SIP_MESSAGE, 
+   SIP_INFO, 
+   SIP_PRACK, 
+   SIP_PUBLISH, 
+   SIP_SERVICE, 
+   SIP_UPDATE, 
+   SIP_MAX_METHODS
+}; 
+
+
+#endif
+

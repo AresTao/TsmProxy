@@ -1,0 +1,52 @@
+def buildHtml(rcvMsg, counter):
+   html = _Html()
+   html.initial("PSAHTTP self test")
+   if rcvMsg.body.argc<4 :
+      html.elem("div", "argv must greater than 3")
+   else :
+      body = "path = " + rcvMsg.body.argv[0] + "\n"
+      body = body + "query = " + rcvMsg.body.argv[1] + "\n"
+      body = body + "query to json = " + toJson(rcvMsg.body.argv[1].uricParse()) + "\n"
+      contentLength = rcvMsg.body.argv[2].toInt()
+      body = body + "contentLength = " + contentLength + "\n"
+      if contentLength>0 :
+         body = body + "content = " + rcvMsg.body.argv[3] + "\n"
+         body = body + "content to json = " + toJson(rcvMsg.body.argv[3].uricParse()) + "\n"
+      i = 4
+      while i<rcvMsg.body.argc-1 :
+         body = body + rcvMsg.body.argv[i] + " = " + rcvMsg.body.argv[i+1] + "\n"
+         i = i+2
+      body = body + "session = " + __sys_myaddr + "\n"
+      body = body + "counter = " + counter + "\n"
+      body = body.htmlEncode()
+      html.elem("div", body.c_str())
+   html.beginForm()
+   html.begin("p")
+   html.cat("Input something to test content: ")
+   html.input("text", "test")
+   html.input("submit", "submit", "OK")
+   html.end()
+   html.end()
+   html.enclose()
+   return html
+
+def buildResponse(html):
+   m = _UniMsg()
+   m.id = 16
+   m.body.argv[0] = "text/html"
+   m.body.argv[1] = html.c_str()
+   delete(html)
+   return m
+
+for i in range(1,10):
+   if valid(__msg):
+      html = buildHtml(__msg, i)
+      delete(__msg)
+      m = buildResponse(html)
+      send(m)
+      wait(60)
+   else:
+      log('no further message from the http gateway in 60 seconds, exit')
+      exit()
+
+log('process message from the http gateway 10 times, exit')

@@ -1,0 +1,34 @@
+#ifndef __HTTPMSGDEF_H
+#define __HTTPMSGDEF_H
+
+// for server receive http request
+class THttpMsgReq : public TMsgBody
+{
+public:
+    CStr method;
+    CStr version;
+    CStr path;
+    CStr query;
+    CDict header;
+    CStr content;
+} = HTTP_MESSAGE_REQ(2200);
+
+class THttpMsgResp : public TMsgBody
+{
+public:
+    CStr code;
+    CDict header;
+    CStr content;
+} = HTTP_MESSAGE_RSP(2201);
+
+// for client send http request
+class THttpMsgReqOut : public TMsgBody
+{
+public:
+    CStr url;
+    CDict header;
+    CStr content;
+    CStr download;
+} = HTTP_MESSAGE_REQ_OUT(2202);
+
+#endif

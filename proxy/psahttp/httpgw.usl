@@ -1,0 +1,13 @@
+from = __msg.from
+destApp = "psahttptest.usl"
+u = __msg.body.argv[1].uricParse()
+__msg.body.argv[0] = destApp
+if(defined(u.session)):
+	send(__msg, u.session)
+else:
+	send(__msg, destApp)
+wait(5)
+if valid(__msg):
+	send(__msg, from)
+else:
+	log("time out when wait http response from app");

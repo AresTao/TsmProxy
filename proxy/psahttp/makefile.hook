@@ -1,0 +1,49 @@
+###############################################################################
+#
+#    makefile for building Uninetssc under Linux
+#
+#    copyright(c) 2005-2008, by MT2.
+#    all rights reserved. 
+
+#    author: Li Jinglin
+#    e-mail: jlli@mt2.com.cn
+#    date  : 2006-5-11 
+###############################################################################
+
+CC=g++
+
+OUTDIR=../_bin
+
+INC_PSA_HTTP=-I.
+
+INC_UNI_DIR=../../include
+
+INC_UNIFRAME= -I${INC_UNI_DIR}/msg -I${INC_UNI_DIR}/comserv -I${INC_UNI_DIR}/kernel -I${INC_UNI_DIR}/component
+
+INC_ALL= $(INC_PSA_HTTP) $(INC_UNIFRAME) 
+
+CFLAGS=$(INC_ALL) 
+
+SRC_C=\
+	hookpsahttpimpl.C\
+	httpserver.C\
+	httpmessage.C
+
+OBJ=\
+	${SRC_C:.C=.o}
+	
+SO=${OUTDIR}/libpsahttp.so
+
+all: 	${SO} 
+
+${SO}: ${OBJ}
+	$(CC) -shared -o ${SO} ${OBJ}
+
+.C.o:	${SRC_C}
+	${CC} -o $@ -c ${CFLAGS}  $<
+
+clean:
+	rm -f ${SO} ${OBJ} 
+
+install:
+	cp ${SO} ${UNIDIR}/lib
