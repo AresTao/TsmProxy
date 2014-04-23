@@ -28,16 +28,6 @@ UNIFRAMEINC = \
 	-I../../_lib/xframe/include/task\
 	-I../../_lib/xframe/include/mysql\
 	-I../../_lib/xframe/include\
-        -I../../_lib/resip/include\
-        -I../../_lib/resip/include/rutil\
-	-I../../_lib/resip/include/rutil/ssl\
-        -I../../_lib/resip/include/rutil/dns\
-        -I../../_lib/resip/include/rutil/stun\
-        -I../../_lib/resip/include/resip/stack\
-        -I../../_lib/resip/include/resip/stack/ssl\
-        -I../../_lib/resip/include/resip/dum\
-        -I../../_lib/resip/include/contrib\
-        -I../../_lib/resip/include/contrib/ares\
 	-I../../_lib/proxy/include\
 
 CFLAGS = -g ${UNIFRAMEINC} -Wno-deprecated ${X86_64DEF}
@@ -54,7 +44,7 @@ ${LIBSMMID}: ${OBJ_LIBSMMID}
 	@echo
 
 ${DLLSMMID}: ${OBJ_DLLSMMID}
-	g++ -shared -o ${DLLSMMID} ${OBJ_DLLSMMID} -DDLL_EXPORTS -L../../_lib/resip/lib -lrutil -lresip ../../_lib/proxy/lib/libpsahttp.a
+	g++ -shared -o ${DLLSMMID} ${OBJ_DLLSMMID} -DDLL_EXPORTS ../../_lib/proxy/lib/libpsahttp.a
 #	refcheck .
 
 .C.o:   ${SRC_ALL}
